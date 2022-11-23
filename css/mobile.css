@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+  .myphoto {
+    display: none;
+  }
+  .banner {
+    height: 200px;
+    padding-top: 60px;
+  }
+  .none {
+    display: none;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .text {
+    border: 0;
+    padding: 0;
+  }
+  .img1,
+  .img2,
+  .img3 {
+    width: 300px;
+    height: 15 0px;
+    border-bottom: 1px solid #d6c08d;
+  }
+  .img2 {
+    border-left: none;
+  }
+  .cer1, .cer2, .cer3 {
+    width: 100%;
+  }
+  .cer2 {
+    border-left: none;
+  }
+  .cer1 {
+    border-bottom: 1px solid #d6c08d;
+
+  }
+}

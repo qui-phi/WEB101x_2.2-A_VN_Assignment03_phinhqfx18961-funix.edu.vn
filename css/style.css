@@ -1,0 +1,395 @@
+* {
+  margin: 0px;
+}
+
+.cv-website {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  max-width: 1170px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot");
+  src: url("../fonts/fontello.eot#iefix") format("embedded-opentype"),
+    url("../fonts/fontello.woff") format("woff"),
+    url("../fonts/fontello.ttf") format("truetype"),
+    url("../fonts/fontello.svg#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* banner */
+.banner {
+  background-image: url("../images/banner.jpg");
+
+  text-align: center;
+  width: 100%;
+  height: 560px;
+  padding-top: 250px;
+  background-size: 100%;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+/* nav */
+#nav-bar {
+  background-color: #ffffff;
+
+  text-align: center;
+}
+#nav-bar a {
+  /* float: left; */
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.text {
+  padding: 20px 0;
+  border-left: 2px solid #f5f5f5;
+
+  border-right: 2px solid #f5f5f5;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+#nav-bar a:hover {
+  color: black;
+}
+#nav-bar a.active {
+  color: black;
+  text-decoration: none;
+}
+i {
+  color: #199cdb;
+}
+
+.hinh {
+  position: relative;
+}
+.ctn {
+  width: 90% !important;
+  margin: auto;
+}
+.myphoto {
+  position: absolute;
+  border-radius: 50%;
+  border: 20px solid white;
+  height: 200px;
+  width: 200px;
+
+  top: -100px;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* format muc tieu nghe nghiep */
+
+span {
+  line-height: 2;
+  text-align: left;
+}
+.mt-40-info {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: none;
+}
+
+.section-title {
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.noi-dung {
+  line-height: 2;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.part {
+  background-color: #f5f5f5;
+}
+#personal-info {
+  background-color: #f0f0f0;
+  
+}
+.more {
+  padding: 40px;
+}
+/* format cho nut submit */
+.go {
+  background: #3078b3;
+  
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 4px 15px;
+  margin: 30px 0 0 20px;
+  transition: 0.3s;
+}
+.go:hover {
+  background: #235a8b;
+}
+.go:active {
+  border: 2px solid black;
+}
+.email-box {
+  margin: 0 0px 10px 20px;
+  width: 93%;
+  /* padding: 0 10px; */
+  border-radius: 5px;
+  border: 1px solid #d1d5da;
+  outline: none;
+  transition: 0.3s;
+  
+  
+}
+.email-box:focus {
+  /* border-top: 3px solid #87c5f2;
+  border-left: 3px solid #9fd0f7;
+  border-right: 3px solid #9fd0f7;
+  border-bottom: 3px solid #c6c8cd; */
+  border-radius: 5px;
+  border: double 3px transparent;
+  background-image: linear-gradient(white, white),linear-gradient(to bottom, #87c5f2, #9fd0f7, #c6c8cd);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+  
+}
+
+.enter-email {
+  margin-left: 20px;
+}
+
+
+/* experience format */
+.item {
+  border: 1px solid #eaeaea;
+  
+  min-height: 800px;
+}
+
+.tua-de {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.it1 {
+  min-height: 40px;
+  padding-top: 110px;
+  padding-left: 20px;
+}
+.it2 {
+  padding-top: 100px;
+  font-size: 250%;
+}
+
+.it3 {
+  padding-top: 70px;
+  padding-left: 40px;
+  line-height: 1.5;
+}
+.now {
+  background-color: #199cdb;
+  color: white;
+
+  border-radius: 6px;
+  text-align: center;
+  padding: 0 5px 0 5px;
+  font-weight: lighter;
+}
+.tieu-de:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #199cdb;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+/* dinh dang cho nut view more */
+.it3 {
+  display: none;
+ }
+.show-more {
+  display: none;
+  background-color: #f5f5aa;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
+  padding: 3px 15px;
+  margin-left: 20px;
+}
+.exp:hover .show-more {
+ display: block;
+}
+.act:hover .show-more {
+  display: block;
+}
+.skill:hover .show-more {
+  display: block;
+}
+.edu:hover .show-more {
+  display: block;
+}
+.lan:hover .show-more {
+  display: block;
+}
+.hob:hover .show-more {
+  display: block;
+}
+
+/* dinh dang cho ky nang va ngon ngu */
+.skill-lang {
+  /* margin-top: 70px;
+  margin-left: 20px; */
+  line-height: 2;
+}
+
+.xanh {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  margin-right: 10px;
+  background-color: #199cdb;
+}
+.xam {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  margin-right: 10px;
+  background-color: #f3f3f3;
+}
+
+/* format cho so thich */
+.chi-tiet {
+  /* margin-top: 70px;
+  margin-left: 20px; */
+  line-height: 2;
+}
+.icon {
+  text-align: center;
+  padding-top: 10px;
+  color: #33a7de;
+  font-size: 25px;
+  margin-right: 20px;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #33a7de;
+  border-radius: 70px;
+}
+.chu {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* format chung chi giai thuong */
+.certificate {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* gap: 30px; */
+  /* align-items: center; */
+}
+
+.cont5 {
+  margin: 40px 0;
+  background-color: #f7f7f7;
+}
+
+.description {
+  /* display: inline-block; */
+  /* padding-left: 5px; */
+  line-height: 2;
+  padding-top: 10px;
+}
+
+.certificate {
+  border-bottom: 1px solid #d6c08d;
+  padding-bottom: 20px;
+}
+.certificate:last-child {
+  border: none;
+}
+.cer1 {
+ 
+  padding: 20px;
+  width: 50%;
+}
+.cer2 {
+ 
+  border-left: 1px solid #d6c08d;
+  padding: 20px;
+  
+  width: 50%;
+}
+.cer3 {
+  padding: 20px;
+  margin: 40px 0;
+  width: 50%;
+}
+
+/* du an */
+
+.dau {
+  padding: 20px 0 20px 20px;
+  border: 1px solid #ececec;
+  font-weight: bold;
+  height: 80px;
+}
+.icon2 {
+  color: #777;
+}
+.dau2 {
+  padding: 20px 0 20px 20px;
+  border: 1px solid #dddddd;
+}
+table td {
+  border-top: 1px solid #dddddd;
+
+  border-collapse: collapse;
+  padding: 20px 10px;
+}
+.la {
+  border: 1px solid #eaeaea;
+}
+
+/* formar footer */
+#footer {
+  background-color: #f7f7f7;
+
+  text-align: center;
+  padding: 40px;
+}
+#footer a {
+  color: black;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+#footer a:hover {
+  color: black;
+}
+#footer a:active {
+  color: black;
+  text-decoration: none;
+}
+
+
+ 
